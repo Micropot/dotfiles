@@ -1,0 +1,97 @@
+
+theme="onedark"
+
+[editor]
+true-color=true
+cursorline=true
+mouse= true
+bufferline="multiple"
+auto-format = true
+[keys.insert]
+C-c="normal_mode"
+C-s=["normal_mode", ":write"]
+C-a=["normal_mode", "goto_line_start", "insert_at_line_start"]
+C-e=["normal_mode", "goto_line_end", "insert_at_line_end"]
+
+
+[keys.normal]
+# Replace word under cursor 
+"C-f" = ["keep_primary_selection", "move_prev_word_start", "move_next_word_end", "search_selection", "select_mode"]
+# "C-f" = ['search']
+# "C-d" = ["keep_primary_selection", "move_prev_word_start", "move_next_word_end", "search_selection", "select_mode"]
+# Paste from system clipboard
+"C-v" = ["paste_primary_clipboard_before"]
+
+
+# Duplicate line 
+"C-d"= [ "yank",  "paste_after"]
+
+# Delete line 
+C-x=["extend_to_line_bounds", "delete_selection"]
+
+# Buffer 
+S-tab=":buffer-next"
+C-q=":buffer-close"
+C-s=":write"
+A-s=":write-all"
+C-n=":new"
+"ins"=":vnew"
+
+C-up=[ "delete_selection", "move_visual_line_up", "paste_before"]
+# Move line 
+C-down=[ "delete_selection", "move_visual_line_down", "paste_before"]
+C-a=["select_all"]
+
+# Mark current line 
+C-space=["save_selection"]
+
+C-b=":run-shell-command make"
+C-c=["collapse_selection", "keep_primary_selection"]
+"&"=["repeat_last_motion"]
+M="@mim"
+
+"F2"=":config-open"
+"F1"=":config-reload"
+C-left="jump_backward"
+C-right="jump_forward"
+
+
+C-w=["move_char_right", "move_prev_word_start", "move_next_word_start", "search_selection"]
+
+
+[keys.select]
+
+"C-d" = ["search_selection", "extend_search_next"]
+"&"=["repeat_last_motion"]
+"/"="toggle_comments"
+
+[keys.normal.space]
+"/"="toggle_comments"
+i=":format"
+right="extend_to_line_end"
+left="extend_to_line_start"
+c=["yank"]
+v=["paste_after"]
+V=["paste_before"]
+
+
+[keys.select.space]
+"/"="toggle_comments"
+
+[editor.cursor-shape]
+insert="bar"
+normal="block"
+select="underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator"]
+center=["file-name", "version-control" ]
+right= ["position","position-percentage", "register", "spacer" ]
+mode.normal="NORMAL"
+mode.insert="INSERT"
+mode.select="SELECT"
+
+[editor.file-picker]
+hidden = false
+
+

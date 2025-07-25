@@ -1,0 +1,60 @@
+[alias]
+    a  = add
+    ad = add
+    ap = add -p
+    pa = reset -p
+    ai = add -i
+
+    rp = reset -p
+
+	r = restore
+	rs = restore --staged
+
+    b = branch
+    br = branch
+
+	s = status
+    st = status
+
+    ci = commit
+    cif = commit --fixup
+    cifp = commit --fixup HEAD
+    cim = commit -m
+    cam = commit -Am
+    cia = commit --amend
+
+	me = merge
+	
+    cp = cherry-pick
+
+    cl = clone
+
+    co = checkout
+    cob = checkout -b
+
+    df = diff
+    dfs = diff --staged
+    diffstat = diff --stat -r
+
+    lg = log -p
+    lo = log --decorate
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lgl = log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"
+    alltags = log --decorate --oneline --simplify-by-decoration
+    who = shortlog -s --
+
+    ps = push
+    pl = pull
+
+    rb = rebase
+    ri = rebase -i
+    rbc = rebase --continue
+    rbs = rebase --skip
+
+    ss = stash
+    sa = stash apply
+    sp = stash pop
+    sl = stash list
+    sd = stash drop
+    sh = stash show[alias]
