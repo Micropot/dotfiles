@@ -1,5 +1,5 @@
 
-theme="onedark"
+theme="night_owl"
 
 [editor]
 true-color=true
@@ -57,7 +57,7 @@ C-right="jump_forward"
 
 
 C-w=["move_char_right", "move_prev_word_start", "move_next_word_start", "search_selection"]
-
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.select]
 
