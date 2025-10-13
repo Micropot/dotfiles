@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+[<35;161;42M# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -170,4 +170,19 @@ print(" ".join(deps))
     fi
 }
 
+<<<<<<< HEAD
 alias g=git
+=======
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+=======
+#!/bin/bash
+
+alias g=git
+alias v=vault
+>>>>>>> f48ea50 (new zshrc)
+=======
+alias g=git
+>>>>>>> 9a2c8bc (new zshrc)
+>>>>>>> 9cdab6f (new zshrc)
