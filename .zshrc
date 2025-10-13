@@ -170,19 +170,3 @@ print(" ".join(deps))
     fi
 }
 
-<<<<<<< HEAD
-alias g=git
-=======
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-#!/bin/bash
-
-alias g=git
-alias v=vault
->>>>>>> f48ea50 (new zshrc)
-=======
-alias g=git
->>>>>>> 9a2c8bc (new zshrc)
->>>>>>> 9cdab6f (new zshrc)
