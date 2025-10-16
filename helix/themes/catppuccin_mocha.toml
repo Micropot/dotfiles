@@ -68,7 +68,7 @@
 "ui.background" = { fg = "text", bg = "base" }
 
 "ui.linenr" = { fg = "surface1" }
-"ui.linenr.selected" = { fg = "lavender" }
+"ui.linenr.selected" = { fg = "peach" }
 
 "ui.statusline" = { fg = "subtext1", bg = "mantle" }
 "ui.statusline.inactive" = { fg = "surface2", bg = "mantle" }
