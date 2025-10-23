@@ -93,7 +93,7 @@
 "ui.virtual.ruler" = { bg = "surface0" }
 "ui.virtual.indent-guide" = "surface0"
 "ui.virtual.inlay-hint" = { fg = "surface1", bg = "mantle" }
-"ui.virtual.jump-label" = { fg = "rosewater", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "red", modifiers = ["bold"] }
 
 "ui.selection" = { bg = "surface1" }
 
