@@ -10,6 +10,9 @@ args = ["server"]
 
 [language-server.ruff.config.settings]
 lineLength = 80
+ignore = [
+            "E501", # line too long
+          ] 
 
 [language-server.ruff.config.settings.lint]
 select = ["E4", "E7"]
