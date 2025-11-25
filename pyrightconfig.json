@@ -1,0 +1,13 @@
+{
+  "reportMissingTypeArgument": false,
+  "reportUnknownParameterType": false,
+  "reportUnknownMemberType": false,
+  "reportAttributeAccessIssue": false,
+  "reportPrivateLocalImportUsage": false,
+  "reportCallIssue": false,
+  "reportUnknownVariableType": false,
+  "reportMissingParameterType": false,
+  "reportUnannotatedClassAttribute": false,
+  "reportUnusedCallResult": false,
+  
+}
