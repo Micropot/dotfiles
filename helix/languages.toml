@@ -1,27 +1,79 @@
-[[language]]
-name = "python"
-language-servers = ["ruff", "pylsp"]
-formatter = { command = "ruff", args = ["format", "-"] }
-auto-format = true
+# [[language]]
+# name = "python"
+# language-servers = ["basedpyright", "ruff"]
+# formatter = { command = "ruff", args = ["format", "-"] }
+# auto-format = true
 
-[language-server.ruff]
-command = "ruff"
-args = ["server"]
+# [language-server.basedpyright]
+# command = "basedpyright-langserver"
+# args = ["--stdio"]
 
-[language-server.ruff.config.settings]
-lineLength = 80
-ignore = [
-            "E501", # line too long
-          ] 
 
-[language-server.ruff.config.settings.lint]
-select = ["E4", "E7"]
-preview = false
+# [[language]]
+# name = "python"
+# language-servers = ["ruff", "pylsp"]
+# # language-servers = ["pylsp"]
+# formatter = { command = "ruff", args = ["format", "-"] }
+# auto-format = true
 
-[language-server.ruff.config.settings.format]
-preview = true
+# [language-server.ruff]
+# command = "ruff"
+# args = ["server"]
+
+# [language-server.ruff.config.settings]
+# lineLength = 80
+# ignore = [
+#             "E501", # line too long
+#           ] 
+
+# [language-server.ruff.config.settings.lint]
+# select = ["E4", "E7"]
+# preview = false
+
+# [language-server.ruff.config.settings.format]
+# preview = true
 
 
 # [language.formatter]
 # command = "black"
 # args = ["--line-length", "100", "--quiet", "-"]
+
+
+[[language]]
+name = "python"
+scope = "source.python"
+file-types = ["py"]
+shebangs = ["python"]
+comment-token = "#"
+roots = [".git", "pyproject.toml", "requirements.txt", "setup.py"]
+auto-format = true
+formatter = { command = "ruff", args = ["format", "-"] }
+language-servers = ["basedpyright", "ruff"]
+
+# --- BASEDPYRIGHT ---
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
+[language-server.basedpyright.config]
+basedpyright.disableLanguageServices = false
+basedpyright.disableOrganizeImports = false
+basedpyright.disableTaggedHints = false
+basedpyright.analysis.diagnosticMode = "openFilesOnly"  # "openFilesOnly" ou "workspace"
+basedpyright.analysis.autoImportCompletions = true
+basedpyright.analysis.autoSearchPaths = true
+# --- RUFF ---
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.ruff.config.settings]
+lineLength = 88
+ignore = ["E501"]
+
+[language-server.ruff.config.settings.lint]
+select = ["E", "F", "I"]
+preview = false
+
+[language-server.ruff.config.settings.format]
+preview = true
