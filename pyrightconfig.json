@@ -9,5 +9,6 @@
   "reportMissingParameterType": false,
   "reportUnannotatedClassAttribute": false,
   "reportUnusedCallResult": false,
+  "reportMissingTypeStubs": false,
   
 }
